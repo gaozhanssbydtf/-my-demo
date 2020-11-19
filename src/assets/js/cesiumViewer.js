@@ -604,15 +604,15 @@ function CesiumViewer(id) {
         alpha: true,
       }
     },
-    // imageryProvider: new Cesium.UrlTemplateImageryProvider({
-    //   url: "http://mt1.google.cn/vt/lyrs=s&hl=zh-CN&x={x}&y={y}&z={z}&s=Gali"
-    // })
-    imageryProvider: new Cesium.ArcGisMapServerImageryProvider({
-      url: "http://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
-      layers: '0',
-      proxy: new Cesium.DefaultProxy('/proxy/')
-
+    imageryProvider: new Cesium.UrlTemplateImageryProvider({
+      url: "http://mt1.google.cn/vt/lyrs=s&hl=zh-CN&x={x}&y={y}&z={z}&s=Gali"
     })
+    // imageryProvider: new Cesium.ArcGisMapServerImageryProvider({
+    //   url: "http://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+    //   layers: '0',
+    //   proxy: new Cesium.DefaultProxy('/proxy/')
+
+    // })
 
 
   });
@@ -712,10 +712,10 @@ function CesiumViewer(id) {
   viewer._cesiumWidget._creditContainer.style.display = "none"; // 隐藏版权信息
 
   // 加载地形信息
-  viewer.terrainProvider = Cesium.createWorldTerrain({
-    requestWaterMask: true, // required for water effects
-    requestVertexNormals: true // required for terrain lighting
-  });
+  // viewer.terrainProvider = Cesium.createWorldTerrain({
+  //   requestWaterMask: true, // required for water effects
+  //   requestVertexNormals: true // required for terrain lighting
+  // });
   viewer.scene.globe.depthTestAgainstTerrain = true;
 
 

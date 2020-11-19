@@ -2,7 +2,7 @@
  * @author: gaozhan
  * @Date: 2019-12-31 20:30:09
  * @LastEditors: gaozhan
- * @LastEditTime: 2020-11-17 23:13:09
+ * @LastEditTime: 2020-11-18 23:24:04
  * @FilePath: \mydemo\src\components\HelloWorld.vue
  * @Description: In User Settings Edit
 -->
@@ -31,13 +31,7 @@
     CesiumViewerLoader.setHome()
     // CesiumViewerLoader.drawAndShareLine()
     },
-    methods: {
-
-      
-
-     
-     
-    },
+    methods: {},
 
     created: function () {},
 
@@ -48,7 +42,7 @@
 
 </script>
 
-<style>
+<style scope>
   #projectPosition3D {
     width: 100%;
     height: 100%;

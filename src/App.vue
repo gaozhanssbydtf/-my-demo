@@ -2,7 +2,7 @@
  * @author: gaozhan
  * @Date: 2019-12-31 20:30:09
  * @LastEditors: gaozhan
- * @LastEditTime: 2020-11-19 23:13:18
+ * @LastEditTime: 2020-11-21 22:52:19
  * @FilePath: \mydemo\src\App.vue
  * @Description: In User Settings Edit
 -->
@@ -31,7 +31,12 @@ export default {
           {
             name:'适配',
             id:'shipei',
-          }
+          },
+          {
+            name:'组件',
+            id:'templatess',
+          },
+         
         ],
         activeIndex:0,
         isShow:true
@@ -41,18 +46,21 @@ export default {
     created() {
      this.$nextTick(() => {
         if(sessionStorage.activeIndex) {
+          
         this.activeIndex = sessionStorage.activeIndex
       }
      })
     },
     beforeDestroy() {
       sessionStorage.removeItem('activeIndex')
+      
     },
     methods: {
       changeLink(item,index) {
         this.activeIndex = index
         this.$router.push(item.id)
-        sessionStorage.setItem('activeIndex', this.activeIndex)
+        
+        sessionStorage.setItem('activeIndex', this.activeIndex);
       }
     },
 }
@@ -93,6 +101,7 @@ export default {
   height: 30px;
   background: #ccc;
   text-align: center;
+  
   line-height: 30px;
 }
 </style>

@@ -13,6 +13,7 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "better-scroll": "^1.15.2",
     "cesium": "^1.57.0",
     "core-js": "^3.6.1",
     "vue": "^2.5.2",
@@ -37,6 +38,7 @@
     "copy-webpack-plugin": "^4.0.1",
     "cross-spawn": "^5.0.1",
     "css-loader": "^0.28.0",
+    "eslint": "^7.13.0",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^1.1.4",
     "friendly-errors-webpack-plugin": "^1.6.1",
